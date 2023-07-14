@@ -1,59 +1,127 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
-.container{
+
+#header {
+    background-image: url('./images/header_bg.png'), url('./images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, 20px 25px;
+    padding: 48px 0px;
+    background-color: #FFF8F3;
+}
+
+.container {
     width: 80%;
     margin: 0 auto;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8px;
 }
-.logo h3{
+
+.logo h3 {
     font-size: 2rem;
     font-weight: 800;
 }
-.logo span{
+
+.logo span {
     color: #FD6E0A;
 }
-.main-menu ul{
-    
-} 
-.menu{
+
+.main-menu ul {}
+
+.menu {
     display: flex;
     gap: 30px;
     align-items: center;
 }
-.menu li{
+
+.menu li {
     list-style: none;
-    
+
 }
-.menu li a{
+
+.menu li a {
     text-decoration: none;
     color: #474747;
 }
-.menu li:last-child a{
-   color: white;
-}
-.btn{
+
+.menu li:last-child a {
     color: white;
-    padding: 10px 20px;
+}
+
+.btn {
+    color: white;
+    padding: 15px 25px;
     background-color: #FD6E0A;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.5s;
 }
-.btn:hover{
+
+.btn2 {
+    color: #d55c06;
+    padding: 15px 25px;
+    background-color: white;
+    border: 1px solid #d55c06;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+.btn:hover {
     background-color: #d55c06;
     color: white;
 }
+
 /* end the nev section  */
+/* the banner section starts */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.banner-content h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #474747;
+
+}
+
+.banner-content h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    padding: 10px 0;
+}
+
+.content {
+    color: #474747;
+    font: 1rem;
+    line-height: 25px;
+    padding: 5px 0 15px;
+}
+
+.banner-container img {
+    width: calc((50%-150px)/2);
+    margin-bottom: -63px;
+    margin-right: -100px;
+}
+
 
 
 
@@ -67,11 +135,40 @@ body{
 
 /* Responsive the portfolio  */
 @media screen and (max-width: 576px) {
-    .nav-menu, .menu{
+
+    .nav-menu,
+    .menu {
         flex-direction: column;
     }
-    .menu{
+
+    .menu {
         margin-top: 10px;
     }
-    
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+    .banner-container img {
+        width: 100%;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    #header{
+        background-image: none;
+    }
+    .banner-content{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .banner-content .btn{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .banner-content .btn2{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
 }
