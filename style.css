@@ -126,7 +126,7 @@ body {
 #about-section{
     margin: 100px 0;
 }
-.about-me {
+.about-me{
     text-align: center;
     border-radius: 10px;
     background: #FFF8F3;
@@ -153,8 +153,27 @@ body {
     padding: 0;
 }
 /* end the about section  */
-
-
+.what-i-do-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+    padding: 25px 0;
+}
+.skills{
+    padding: 25px;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 3px 5px 10px 3px #b7b0b0;
+}
+.skills h4{
+    padding: 20px 0;
+}
+.what-content {
+    text-align: center;
+    padding-bottom: 80px;
+}
 
 
 
@@ -212,7 +231,7 @@ body {
     .content-width{
         width: 100%;
     }
-    .about-content{
+    .about-content, .what-i-do-content{
         flex-direction: column;
         row-gap: 20px;
     }
