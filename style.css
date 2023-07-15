@@ -216,21 +216,43 @@ body {
     width: 65%;
     padding: 15px 0 25px;
 }
- 
+/* completed the Resume section  */
+ #footer{
+    background-color:  #FFF8F3;
+    padding: 130px 0;
+ }
+ .contact{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+ }
+ .connect{
+   width: 50%;
+ }
+ .connect img{
+    margin-right: 25px;
+    display: inline;
+ }
+ .contact-us{
+    width: 50%;
+ }
+ .contact-form input[type=text], input[type=email], textarea{
+    display: block;
+    padding: 20px 0 20px 20px;
+    border: none;
+    border-radius: 5px; 
+    background-color: #FFF;
+    margin: 20px 0;
+    width: 96%;
+    
+ }
+/* completed footer section  */
 
-
-
-
-
-
-
-
-
-/* Responsive the portfolio  */
+/* Responsive small devices  */
 @media screen and (max-width: 576px) {
 
     .nav-menu,
-    .menu {
+    .menu, .contact {
         flex-direction: column;
     }
 
@@ -286,5 +308,25 @@ body {
         width: 100%;
         text-align: justify;
     }
+    .contact-us, .connect{
+        width: 100%;
+    }
 
+}
+
+/* Responsive for medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    .what-i-do-content, .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-content{
+        width: 100%;
+    }
+    .banner-container, .contact {
+        flex-direction: column;
+    }
+    .contact-us, .connect{
+        width: 100%;
+    }
 }
