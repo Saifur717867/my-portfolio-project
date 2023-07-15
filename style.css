@@ -66,6 +66,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
     transition: 0.5s;
 }
 
@@ -77,6 +78,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 20px;
+    font-size: 1rem;
     transition: 0.5s;
 }
 
@@ -174,6 +176,47 @@ body {
     text-align: center;
     padding-bottom: 80px;
 }
+/* completed what i do section  */
+#resume {
+    padding: 30px 0 80px;
+}
+.resume-content .title, .resume-content .btn{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.resume-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    padding: 30px 0;
+}
+.col-left{
+    width: calc((100%-15px)/2);
+}
+.resume-title{
+    font-size: 1.5rem;
+    padding: 20px 0;
+    color: #474747;
+}
+.education-title{
+    font-size: 1.1rem;
+    padding: 10px 0;
+    color: #474747;
+}
+.institute{
+    font-size: 1rem;
+    color: #474747;
+    font-weight: 400;
+}
+.education .content{
+    font-size: 0.8rem;
+    color: #474747;
+    width: 65%;
+    padding: 15px 0 25px;
+}
+ 
 
 
 
@@ -234,6 +277,14 @@ body {
     .about-content, .what-i-do-content{
         flex-direction: column;
         row-gap: 20px;
+    }
+    .resume-description{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .education .content{
+        width: 100%;
+        text-align: justify;
     }
 
 }
