@@ -122,6 +122,37 @@ body {
     margin-right: -100px;
 }
 
+/* start about section  */
+#about-section{
+    margin: 100px 0;
+}
+.about-me {
+    text-align: center;
+    border-radius: 10px;
+    background: #FFF8F3;
+    padding: 80px 20px 100px; 
+}
+.content-width{
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.about-content .content {
+    padding: 0;
+}
+/* end the about section  */
 
 
 
@@ -148,27 +179,42 @@ body {
     .banner-container {
         flex-direction: column-reverse;
     }
+
     .banner-container img {
         width: 100%;
         margin-bottom: 0;
         margin-right: 0;
     }
-    #header{
+
+    #header {
         background-image: none;
     }
-    .banner-content{
+
+    .banner-content {
         text-align: center;
         margin-top: 20px;
     }
-    .banner-content .btn{
+
+    .banner-content .btn {
         display: block;
         margin: 0 auto;
         width: 100%;
     }
-    .banner-content .btn2{
+
+    .banner-content .btn2 {
         width: 100%;
         margin-top: 20px;
         margin-left: 0;
+    }
+    #about-section{
+        margin: 25px 0;
+    }
+    .content-width{
+        width: 100%;
+    }
+    .about-content{
+        flex-direction: column;
+        row-gap: 20px;
     }
 
 }
